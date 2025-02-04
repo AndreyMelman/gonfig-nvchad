@@ -6,7 +6,7 @@
 local M = {}
 
 
-M.ui = {
+M.base46 = {
   theme = "material-deep-ocean",
   transparency = true,
 
