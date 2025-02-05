@@ -5,7 +5,7 @@ require "nvchad.mappings"
 local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
-map("i", "jk", "<ESC>")
+map("i", "jj", "<ESC>")
 
 -- Git
 map("n", "<leader>gl", ":Flog<CR>", { desc = "Git Log" })
