@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre", -- uncomment for format on save
     config = function()
       require "configs.conform"
     end,
@@ -29,9 +29,8 @@ return {
       require("nvchad.configs.lspconfig").defaults()
       require "configs.lspconfig"
     end,
-
   },
- {
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
@@ -45,17 +44,15 @@ return {
         "javascript",
         "go",
       },
-
     },
- },
-    {
+  },
+  {
     "mfussenegger/nvim-lint",
     event = "VeryLazy",
     config = function()
       require "configs.lint"
-
     end,
- },
+  },
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {
