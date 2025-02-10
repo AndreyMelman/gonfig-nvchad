@@ -11,6 +11,9 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
+vim.opt.number = true -- Показывать номер строки
+vim.opt.relativenumber = true -- Включить относительную нумерацию
+
 local lazy_config = require "configs.lazy"
 
 -- load plugins
