@@ -53,6 +53,27 @@ return {
       require "configs.lint"
     end,
   },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "lua-language-server",
+        "stylua",
+        "pyright",
+        "ruff",
+        "black",
+        "debugpy",
+      },
+    },
+  },
+  {
+    "lewis6991/gitsigns.nvim",
+    event = "User FilePost",
+    opts = function()
+      return require "nvchad.configs.gitsigns"
+    end,
+  },
+  { "sindrets/diffview.nvim", lazy = false },
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {
