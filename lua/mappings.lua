@@ -11,5 +11,3 @@ map("n", "<leader>gf", ":DiffviewFileHistory<CR>", { desc = "Git File History" }
 map("n", "<leader>gc", ":DiffviewOpen HEAD~1<CR>", { desc = "Git Last Commit" })
 map("n", "<leader>gz", ":DiffviewClose<CR>", { desc = "Git File Close" })
 map("n", "<leader>gs", ":Telescope git_status<CR>", { desc = "Git Stasus" })
-
--- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
